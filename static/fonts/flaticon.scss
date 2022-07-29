@@ -1,0 +1,145 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?763b9a819514f020847bd1e8b2775ef8") format("truetype"),
+url("./flaticon.woff?763b9a819514f020847bd1e8b2775ef8") format("woff"),
+url("./flaticon.woff2?763b9a819514f020847bd1e8b2775ef8") format("woff2"),
+url("./flaticon.eot?763b9a819514f020847bd1e8b2775ef8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?763b9a819514f020847bd1e8b2775ef8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "age-group": "\f101",
+    "artificial-intelligence-1": "\f102",
+    "artificial-intelligence": "\f103",
+    "cctv-camera": "\f104",
+    "circuit": "\f105",
+    "cloud-network": "\f106",
+    "computer-science": "\f107",
+    "computer": "\f108",
+    "cracked-skin": "\f109",
+    "customer-service": "\f10a",
+    "data-science": "\f10b",
+    "font": "\f10c",
+    "gamepad": "\f10d",
+    "gender-equality": "\f10e",
+    "map": "\f10f",
+    "medicines": "\f110",
+    "message": "\f111",
+    "microphone": "\f112",
+    "nanotech": "\f113",
+    "phone": "\f114",
+    "product": "\f115",
+    "productivity": "\f116",
+    "quotes": "\f117",
+    "sales": "\f118",
+    "science": "\f119",
+    "scientist": "\f11a",
+    "smiling-girl": "\f11b",
+    "speech": "\f11c",
+    "travel": "\f11d",
+    "virtual-reality": "\f11e",
+);
+
+.flaticon-age-group:before {
+    content: map-get($flaticon-map, "age-group");
+}
+.flaticon-artificial-intelligence-1:before {
+    content: map-get($flaticon-map, "artificial-intelligence-1");
+}
+.flaticon-artificial-intelligence:before {
+    content: map-get($flaticon-map, "artificial-intelligence");
+}
+.flaticon-cctv-camera:before {
+    content: map-get($flaticon-map, "cctv-camera");
+}
+.flaticon-circuit:before {
+    content: map-get($flaticon-map, "circuit");
+}
+.flaticon-cloud-network:before {
+    content: map-get($flaticon-map, "cloud-network");
+}
+.flaticon-computer-science:before {
+    content: map-get($flaticon-map, "computer-science");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
+}
+.flaticon-cracked-skin:before {
+    content: map-get($flaticon-map, "cracked-skin");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon-map, "customer-service");
+}
+.flaticon-data-science:before {
+    content: map-get($flaticon-map, "data-science");
+}
+.flaticon-font:before {
+    content: map-get($flaticon-map, "font");
+}
+.flaticon-gamepad:before {
+    content: map-get($flaticon-map, "gamepad");
+}
+.flaticon-gender-equality:before {
+    content: map-get($flaticon-map, "gender-equality");
+}
+.flaticon-map:before {
+    content: map-get($flaticon-map, "map");
+}
+.flaticon-medicines:before {
+    content: map-get($flaticon-map, "medicines");
+}
+.flaticon-message:before {
+    content: map-get($flaticon-map, "message");
+}
+.flaticon-microphone:before {
+    content: map-get($flaticon-map, "microphone");
+}
+.flaticon-nanotech:before {
+    content: map-get($flaticon-map, "nanotech");
+}
+.flaticon-phone:before {
+    content: map-get($flaticon-map, "phone");
+}
+.flaticon-product:before {
+    content: map-get($flaticon-map, "product");
+}
+.flaticon-productivity:before {
+    content: map-get($flaticon-map, "productivity");
+}
+.flaticon-quotes:before {
+    content: map-get($flaticon-map, "quotes");
+}
+.flaticon-sales:before {
+    content: map-get($flaticon-map, "sales");
+}
+.flaticon-science:before {
+    content: map-get($flaticon-map, "science");
+}
+.flaticon-scientist:before {
+    content: map-get($flaticon-map, "scientist");
+}
+.flaticon-smiling-girl:before {
+    content: map-get($flaticon-map, "smiling-girl");
+}
+.flaticon-speech:before {
+    content: map-get($flaticon-map, "speech");
+}
+.flaticon-travel:before {
+    content: map-get($flaticon-map, "travel");
+}
+.flaticon-virtual-reality:before {
+    content: map-get($flaticon-map, "virtual-reality");
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!-- Fav Icon -->
+        <link rel="icon" href="{{ url_for('static', filename='images/favicon-3.ico') }}" type="image/x-icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Stylesheets -->
+        <link href="{{ url_for('static', filename='css/font-awesome-all.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/flaticon.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/owl.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/color.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet">
+        <title>MODELO CONVERSACIONAL</title>
+    {% endblock %}
+  </head>
+  <body >
+    <div class="boxed_wrapper">
+        <div id="loading">{% block loading %}{% endblock %}</div>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">
+          {% block footer %}
+            <!-- main-footer -->
+                <footer class="main-footer footer-style-six">
+                    <div class="pattern-layer" style="background-image: url(static/images/shape/shape-60.png);"></div>
+                    <div class="auto-container">
+                        <div class="footer-top-two">
+                            <div class="row clearfix">
+                                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                    <div class="footer-widget about-widget">
+                                        <div class="text">
+                                            <h3>Book a Demo</h3>
+                                            <p>We will likely assistance organizations keep up accomplish best class positions their separate enterprises & our group works happen that delights need to be disavowed.</p>
+                                        </div>
+                                        <div class="btn-box">
+                                            <a href="index-6.html">More About</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                    <div class="footer-widget links-widget">
+                                        <div class="widget-title">
+                                            <h3>Service Link</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <ul class="links-list clearfix">
+                                                <li><a href="index-2.html">Business</a></li>
+                                                <li><a href="index-2.html">Agency</a></li>
+                                                <li><a href="index-2.html">Social Media</a></li>
+                                                <li><a href="index-2.html">Branding</a></li>
+                                                <li><a href="index-2.html">Design</a></li>
+                                                <li><a href="index-2.html">Search engine</a></li>
+                                                <li><a href="index-2.html">Online support</a></li>
+                                                <li><a href="index-2.html">Development</a></li>
+                                                <li><a href="index-2.html">Pay per click</a></li>
+                                                <li><a href="index-2.html">Event activation</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                    <div class="footer-widget contact-widget">
+                                        <div class="widget-title">
+                                            <h3>Contact Us</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <ul class="info-list clearfix">
+                                                <li>
+                                                    <h4>Office Location</h4>
+                                                    <p>124, Queens walk 2nd cross Denmark</p>
+                                                </li>
+                                                <li>
+                                                    <h4>Phone No.</h4>
+                                                    <p><a href="tel:0088827240">+00-888-27-240</a></p>
+                                                </li>
+                                                <li>
+                                                    <h4>Email Address</h4>
+                                                    <p><a href="mailto:support@info.com">support@info.com</a></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                    <div class="footer-widget subscribe-widget">
+                                        <div class="widget-title">
+                                            <h3>Newsletter</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <div class="text">
+                                                <p>Subscribe To Our Update Newsletter For Our Latest Update.</p>
+                                            </div>
+                                            <form action="contact.html" method="post" class="subscribe-form">
+                                                <div class="form-group">
+                                                    <input type="email" name="email" placeholder="Your Email Address" readonly="">
+                                                    <button type="submit" class="theme-btn btn-ten">Subscribe</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="bottom-inner">
+                                <figure class="footer-logo"><a href="index-6.html"><img src="{{ url_for('static', filename='images/footer-logo-3.png')}}" alt=""></a></figure>
+                                <div class="copyright">
+                                    <p>Copyright &copy; <a href="index-2.html">Bithlo</a>, All Rights Reserved.</p>
+                                </div>
+                                <ul class="social-links clearfix">
+                                    <li><a href="index-6.html"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="index-6.html"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="index-6.html"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="index-6.html"><i class="fab fa-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            <!-- main-footer end -->
+            <!-- scroll to top -->
+                <button class="scroll-top style-two scroll-to-target" data-target="html">
+                    <i class="fas fa-angle-up"></i>
+                </button>
+          {% endblock %}
+        </div>
+    </div>
+    <!-- jequery plugins -->
+    <script src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/owl.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/wow.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/validation.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.fancybox.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/appear.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/scrollbar.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/tilt.jquery.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bxslider.js')}}"></script>
+
+    <!-- main-js -->
+    <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+  </body>
+</html>
