@@ -1,0 +1,13 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+
+sintomas/rf/RandomForest.joblib
+
+# testing
+
+
+# production
+/build
+
+# misc
