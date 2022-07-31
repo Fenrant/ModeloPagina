@@ -1,78 +1,57 @@
-<!-- contact-style-four 
-<section class="banner-style-six" style="padding-top:0px!important">
-    <div class="pattern-layer" style="background-image: url(static/images/shape/shape-91.png);"></div>
-    <section class="contact-style-two sec-pad">
-        <div class="pattern-layer">
-            <div class="pattern-1" style="background-image: url(./static/images/shape/shape-91.png);"></div>
-            <div class="pattern-2" style="background-image: url(./static/images/shape/shape-92.png);"></div>
-        </div>
-        <div class="auto-container">
-            <div class="row clearfix">
-                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                    <div class="content_block_10">
-                        <div class="content-box">
-                            <div class="sec-title style-two">
-                                <h1>Síntomas</h1>
-                                <h5>Nos encantaría saber que síntomas padeces</h5>
-                                <div class="divider" style="background-image: url(static/images/icons/divider-1.png);"></div>
-                            </div>
-                            <div class="form-inner">
-                            <form action="contact.html" method="post" id="contact-form" class="default-form">
-                                <div class="form-group">
-                                    <textarea name="message" placeholder="Escribe aqui..."></textarea>
-                                </div>
-                                <div class="form-group message-btn">
-                                    <button type="submit" class="theme-btn btn-seven">Enviar Síntomas</button>
-                                </div>
-                            </form>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                    <div class="image-box">
-                        <figure class="image js-tilt"><img src="static/images/resource/illestration-5.png" alt=""></figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</section>
- contact-style-four end -->
-<!-- contact-style-two -->
-<section class="contact-style-four">
-    <div class="pattern-layer">
-        <div class="pattern-1" style="background-image: url(static/images/shape/shape-91.png);"></div>
-        <div class="pattern-2" style="background-image: url(static/images/shape/shape-92.png);"></div>
-    </div>
+<section class="contact-style-two sec-pad centred">
+    <div class="pattern-layer" style="background-image: url(http://localhost:5000/static/images/shape/shape-68.png);"></div>
     <div class="auto-container">
         <div class="row clearfix">
             <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div class="content_block_10">
                     <div class="content-box">
                         <div class="sec-title style-two">
-                            <h5>Síntomas</h5>
-                            <h2>Nos encantaría saber que síntomas padeces</h2>
-                            <div class="divider" style="background-image: url(static/images/icons/divider-1.png);"></div>
+                            {% if dataset == "sintomas" %}
+                                <h5>Síntomas</h5>
+                                <h2>Nos encantaría saber que síntomas padeces</h2>
+                            {% else %}
+                                <h5>Recomendaciones</h5>
+                                <h2>Nos encantaría saber que recomendaciones seguistes</h2>
+                            {% endif %}
+                            <div class="divider" style="background-image: url(http://localhost:5000/static/images/icons/divider-1.png);"></div>
                         </div>
-                        <form action="contact.html" method="post" class="default-form">
+                        <form onsubmit="event.preventDefault()" class="default-form" name="myForm">
                             <div class="form-group">
-                                <textarea name="message" placeholder="Escriba aqui..."></textarea>
+                                <textarea name="entrada" placeholder="Escriba aqui..."></textarea>
                             </div>
                             <div class="form-group message-btn">
-                                <button type="submit" class="theme-btn btn-nine">Enviar Síntomas</button>
+                                <button onclick="miFunc()" class="theme-btn btn-nine">Enviar Síntomas</button>
                             </div>
                         </form>
+
+                        
                     </div>
                 </div>
             </div>
+            <script> </script>
             <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                 <div class="image-box">
-                    <figure class="image js-tilt"><img src="static/images/resource/skills-1.png" alt=""></figure>
+                    <figure class="image js-tilt"><img src="http://localhost:5000/static/images/resource/skills-1.png" alt=""></figure>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="padding-top: 15px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                <div id="table">
+                    <table>
+                        <tr>
+                          <td>Columnas</td>
+                          <td>Predicción</td>
+                        </tr>
+                        <tr id="body">
+                        
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
+    
 </section>
 
 <!-- contact-style-two end -->
