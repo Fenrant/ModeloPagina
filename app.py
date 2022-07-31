@@ -25,9 +25,9 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/prediccion', methods=['GET'])
-def prediction():
-    return render_template('prediction.html')
+@app.route('/prediccion/<string:modelo>/<string:dataset>', methods=['GET'])
+def prediction(modelo, dataset):
+    return render_template('prediction.html', modelo=modelo, dataset=dataset)
 
 
 @app.route('/clasificadorModelo', methods=['POST'])
