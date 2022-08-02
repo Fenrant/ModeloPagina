@@ -13,6 +13,7 @@ import neattext.functions as nfx
 from nltk.corpus import stopwords
 from clases import variablesInicio
 import random
+from clases.estadistica import variables, listaVariables
 
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -23,6 +24,11 @@ app = Flask(__name__, template_folder="templates")
 @app.route('/', methods=['GET'])
 def home():
     return render_template('home.html')
+
+
+@app.route('/estadistica', methods=['GET'])
+def estadistica():
+    return listaVariables
 
 
 @app.route('/prediccion/<string:modelo>/<string:dataset>', methods=['GET'])
