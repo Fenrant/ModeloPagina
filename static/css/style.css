@@ -7704,7 +7704,7 @@ h3 a:hover{
   width: 100%;
   height: 60px;
   background-color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 2px solid #dddddd;
   border-radius: 30px;
   font-size: 16px;
   color: #555;
@@ -15190,4 +15190,20 @@ h3 a:hover{
 
 .faq-page-section .sec-title{
   margin-bottom: 40px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }

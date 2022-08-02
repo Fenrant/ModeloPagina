@@ -1,13 +1,21 @@
 <!-- Page Title -->
 <section class="page-title centred">
-    <div class="pattern-layer" style="background-image: url(static/images/shape/shape-87.png);"></div>
+    <div class="pattern-layer" style="background-image: url(http://localhost:5000/static/images/shape/shape-87.png);"></div>
     <div class="auto-container">
         <div class="content-box">
-            <h1>Predicción - Síntomas</h1>
-            <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Inicio</a></li>
-                <li>Síntomas</li>
-            </ul>
+            {% if dataset == "sintomas" %}
+                <h1>Clasificación - Síntomas</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">Inicio</a></li>
+                    <li>Síntomas</li>
+                </ul>
+            {% else %}
+                <h1>Clasificación - Recomendaciones</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">Inicio</a></li>
+                    <li>Recomendaciones</li>
+                </ul>
+            {% endif %}
         </div>
     </div>
 </section>

@@ -30,7 +30,7 @@
           {% block footer %}
             <!-- main-footer -->
                 <footer class="main-footer footer-style-six">
-                    <div class="pattern-layer" style="background-image: url(static/images/shape/shape-60.png);"></div>
+                    <div class="pattern-layer" style="background-image: url(http://localhost:5000/static/images/shape/shape-60.png);"></div>
                     <div class="auto-container">
                         <div class="footer-top-two">
                             <div class="row clearfix">
@@ -134,6 +134,7 @@
         </div>
     </div>
     <!-- jequery plugins -->
+    <script src="{{ url_for('static', filename='js/apis.js')}}"></script>
     <script src="{{ url_for('static', filename='js/jquery.js')}}"></script>
     <script src="{{ url_for('static', filename='js/popper.min.js')}}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>

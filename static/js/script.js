@@ -14,7 +14,7 @@
             $('.loader-wrap').delay(200).fadeOut(500);
         })
     }
-	console.log("entro")
+	
 	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
