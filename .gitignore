@@ -9,6 +9,5 @@ sintomas/rf/RandomForest.joblib
 
 # production
 /build
-/__pycache__
 
 # misc
