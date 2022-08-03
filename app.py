@@ -30,6 +30,11 @@ def prediction(modelo, dataset):
     return render_template('prediction.html', modelo=modelo, dataset=dataset)
 
 
+@app.route('/estadisticas', methods=['GET'])
+def estadistica():
+    return render_template('estadisticas.html', dataset="estadisticas",)
+
+
 @app.route('/clasificadorModelo', methods=['POST'])
 def clasificador():
 

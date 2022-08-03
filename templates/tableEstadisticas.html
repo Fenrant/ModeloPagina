@@ -1,0 +1,111 @@
+
+  <section class="works-style-two centred bg-color-1">
+    <div class="pattern-layer" style="background-image: url(static/images/shape/shape-13.png);"></div>
+    <div class="auto-container">
+      <div class="sec-title style-two">
+        <h5>HOW IT WORKS</h5>
+        <h2>Easy and simple work process</h2>
+        <div class="divider" style="background-image: url(assets/images/icons/divider-1.png);"></div>
+    </div>
+      <div class="inner-container">
+        <div class="row clearfix align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+              <div class="card">
+                <div class="table-responsive-sm">
+                  <table >
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"><div id="margeTable" style="text-align: center;">Frecuencia</div></th>
+                        <th scope="col"><div id="margeTable" style="text-align: center;">Porcentaje</div></th>
+                        <th scope="col"><div id="margeTable" style="text-align: center;">Porcentaje Válido</div></th>
+                        <th scope="col"><div id="margeTable" style="text-align: center;">Porcentaje Acumulado</div></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th><div id="margeTable">Femenino</div></th>
+                        <td><div id="margeTable" style="text-align: center;">12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;">12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;">12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;">12.00</div></td>
+                      </tr>
+                      <tr>
+                        <th><div id="margeTable" style="text-align: center;" >Masculino</div></th>
+                        <td><div id="margeTable" style="text-align: center;" >12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;" >12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;" >12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;" >12.00</div></td>
+                      </tr>
+                      <tr>
+                        <th><div id="margeTable" style="text-align: center;">Total</div></th>
+                        <td><div id="margeTable" style="text-align: center;">12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;">12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;">12.00</div></td>
+                        <td><div id="margeTable" style="text-align: center;">12.00</div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 service-block">
+              <!-- <div class="card image js-tilt" style="filter: drop-shadow(5px 5px 5px gray); ">
+                <div style="margin: 5px;">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div> -->
+  
+              
+                <div class="service-block-two wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="light-icon"><i class="flaticon-science"></i></div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="link"><a href="advertising-marketing.html"><i class="far fa-angle-right"></i></a></div>
+                </div>
+          
+  
+              </div>
+            </div>
+            
+            </div>
+        </div>
+    </div> 
+       
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.0/dist/chart.min.js"></script>
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue'],
+            datasets: [{
+                label: '# of Votes',
+                data: [1200, 1900],
+                backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+</section>
+
+<!-- works-style-two end -->
+
+<!-- contact-style-two end -->
