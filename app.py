@@ -14,6 +14,8 @@ from nltk.corpus import stopwords
 from clases import variablesInicio
 import random
 from clases.estadistica import variables, listaVariables
+from flask import Response
+from flask import jsonify
 
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -28,7 +30,7 @@ def home():
 
 @app.route('/estadistica', methods=['GET'])
 def estadistica():
-    return listaVariables
+    return jsonify({'datos': listaVariables})
 
 
 @app.route('/prediccion/<string:modelo>/<string:dataset>', methods=['GET'])
