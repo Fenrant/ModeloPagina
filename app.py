@@ -37,8 +37,9 @@ def prediction(modelo, dataset):
 
 
 @app.route('/estadisticas', methods=['GET'])
-def estadistica():
-    return render_template('estadisticas.html', dataset="estadisticas",)
+def estadisticasHTML():
+    dat = listaVariables
+    return render_template('estadisticas.html', dataset="estadisticas", datos=dat)
 
 
 @app.route('/clasificadorModelo', methods=['POST'])
