@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block loading %}
+    {% include "loadding.html" %}
+    {% include "menu2.html" %}
+    {% include "pageTitle.html" %}
+    {% include "tableEstadisticas.html" %}
+{% endblock %}

@@ -4030,7 +4030,7 @@ h3 a:hover{
 .service-block-two .inner-box{
   position: relative;
   display: block;
-  background: #ebebeb;
+  background: white; /*#ebebeb;*/
   border-radius: 10px;
   overflow: hidden;
   padding: 60px 15px 67px 15px;
@@ -4083,7 +4083,7 @@ h3 a:hover{
 }
 
 .service-block-two:hover .inner-box .light-icon{
-  color: #042357;
+  color: aliceblue;/*#042357;*/
 }
 
 .service-block-two .inner-box h3{
@@ -15193,17 +15193,25 @@ h3 a:hover{
 }
 
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
+  font-family: 'Jost', sans-serif;
+  border-collapse: collapse; 
   width: 100%;
+  border:none;
+  font-size: 18px !important;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-tr:nth-child(even) {
+/*tr:nth-child(even) {
   background-color: #dddddd;
+}*/
+
+#margeTable {
+  margin-left: 10px; 
+  margin-right: 10px;
 }
