@@ -75,13 +75,11 @@ variables['Nombre_Vacunas'] = df_nombre_vacunas
 #variables['grafico'] = devuelveGrafica(df_genero)
 #variables['tabla'] = devuelveTabla(df_genero)
 
-listaVariables = []
+listaVariables = {}
 
 for k, v in variables.items():
     var = {}
     var['grafico'] = devuelveGrafica(v)
     var['tabla'] = devuelveTabla(v)
 
-    puntual = [k,var]
-
-    listaVariables.append(puntual)
+    listaVariables[k] = var

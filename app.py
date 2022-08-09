@@ -30,7 +30,7 @@ def home():
 
 @app.route('/estadistica', methods=['GET'])
 def estadistica():
-    return jsonify({'datos': listaVariables})
+    return listaVariables
 
 
 @app.route('/prediccion/<string:modelo>/<string:dataset>', methods=['GET'])
