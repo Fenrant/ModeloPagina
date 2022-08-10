@@ -42,6 +42,12 @@ def estadisticasHTML():
     return render_template('estadisticas.html', dataset="estadisticas", datos=dat)
 
 
+@app.route('/contactos', methods=['GET'])
+def contactos():
+    dat = listaVariables
+    return render_template('contacts.html', dataset="contactos", datos=dat)
+
+
 @app.route('/prediccion/rf/sintomas/graficasSintomas', methods=['GET'])
 def graficasSintomas():
     return render_template('graficas.html', dataset="graficasSintomas")
