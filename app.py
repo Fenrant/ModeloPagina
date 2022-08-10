@@ -44,6 +44,16 @@ def estadisticasHTML():
     return render_template('estadisticas.html', dataset="estadisticas", datos=dat)
 
 
+@app.route('/prediccion/rf/sintomas/graficasSintomas', methods=['GET'])
+def graficasSintomas():
+    return render_template('graficas.html', dataset="graficasSintomas")
+
+
+@app.route('/prediccion/rf/recomendaciones/graficasRecomendaciones', methods=['GET'])
+def graficasRecomendaciones():
+    return render_template('graficas.html', dataset="graficasRecomendaciones")
+
+
 @app.route('/clasificadorModelo', methods=['POST'])
 def clasificador():
 

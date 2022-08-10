@@ -1,8 +1,12 @@
-
-
+(function () {
+        document.getElementById("load").style.display = 'none'
+})();
 function clasificadorModelo(modelo, dataset) {
     var entrada = document.getElementById("myTextarea").value;
     var  data = JSON.stringify({modelo, dataset, entrada})
+    document.getElementById("sintomas").style.display = 'none'; 
+    document.getElementById("botonVerMas").style.display = 'none'; 
+    document.getElementById("load").style.display = ''
     $.ajax({
         type:"POST", 
         url:"http://localhost:5000/clasificadorModelo",
@@ -43,7 +47,21 @@ function clasificadorModelo(modelo, dataset) {
                 }
                
             }
+            document.getElementById("sintomas").style.display = ''; 
+            document.getElementById("botonVerMas").style.display = '';
             document.getElementById("sintomas").innerHTML = sintomas;
+            
+            document.getElementById("botonVerMas").innerHTML = `<div class="row clearfix" style="margin-bottom: 5%; text-align: end; margin-right: 2%">
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                <div class="content-box wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <div class="btn-box">
+                        <a href=${dataset == "sintomas"? "/prediccion/rf/sintomas/graficasSintomas": "/prediccion/rf/recomendaciones/graficasRecomendaciones"} class="theme-btn btn-ten">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+        document.getElementById("load").style.display = 'none'; 
         },
+        
     })
   }

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block loading %}
+    {% include "loadding.html" %}
+    {% include "menu2.html" %}
+    {% include "pageTitle.html" %}
+    {% if dataset == "graficasSintomas" %}
+        {% include "graficasSintomas.html" %}
+    {% else %}
+        {% include "graficasRecomendaciones.html" %}
+    {% endif %}
+{% endblock %}
