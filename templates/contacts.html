@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block loading %}
+    {% include "loadding.html" %}
+    {% include "menu2.html" %}
+    {% include "pageTitle.html" %}
+    <div >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1993.4512884805738!2d-79.8827316!3d-2.1905954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6e78ed452d45%3A0xc5de025aa4a94c77!2sUniversidad%20De%20Guayaquil%20-%20Facultad%20de%20Matem%C3%A1ticas%20y%20Ciencias%20F%C3%ADsicas!5e0!3m2!1ses!2sec!4v1660111584382!5m2!1ses!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    {% endblock %}
+
