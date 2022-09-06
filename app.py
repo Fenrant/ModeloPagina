@@ -1,24 +1,14 @@
 
 from flask import Flask, request, render_template
-from joblib import load
-import pandas as pd
-import numpy as np
 import re
 import string
-from sklearn.metrics import accuracy_score
-import pickle
 import nltk
-import neattext as nt
-import neattext.functions as nfx
 from nltk.corpus import stopwords
 from clases import variablesInicio
 import random
-from clases.estadistica import variables, listaVariables
-from flask import Response
-from flask import jsonify
+from clases.estadistica import  listaVariables
 
 nltk.download('stopwords')
-nltk.download('punkt')
 
 app = Flask(__name__, template_folder="templates")
 
