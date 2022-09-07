@@ -1,8 +1,6 @@
 
 import pandas as pd
 
-
-
 def generaDataFrame(df_estadistica,campo):
     df = df_estadistica.iloc[:,[df_estadistica.columns.get_loc(campo)]]
     df = df.groupby([campo]).size().to_frame(name='Frecuencia')
