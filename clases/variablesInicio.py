@@ -13,7 +13,7 @@ clf_svm_sintomas = load('sintomas\svm\SVM.joblib')
 svm_sintomas_y_test = pd.read_excel('sintomas\svm\SVM-y_test.xlsx')
 svm_sintomas_vectorizador = pickle.load(open("sintomas\svm\SVM-vectorizador.pickel", "rb"))
 
-clf_rf_sintomas = load('sintomas\\rf\RandomForest.joblib')
+clf_rf_sintomas = load('sintomas\\rf\RandomForest.joblisb2')
 rf_sintomas_y_test = pd.read_excel('sintomas\\rf\RandomForest-y_test.xlsx')
 rf_sintomas_vectorizador = pickle.load(open("sintomas\\rf\RandomForest-vectorizador.pickel", "rb"))
 
